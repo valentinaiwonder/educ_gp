@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login do Professor - Proeducation</title>
+    <link rel="stylesheet" href="educ_gp/assets/perfilprof.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Cadastro do Professor</h2>
+        <form>
+            <div class="form-section">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome completo">
+                
+                <label for="data-nascimento">Data de Nascimento:</label>
+                <input type="date" id="data-nascimento">
+
+                <label for="materia">Matéria:</label>
+                <select id="materia">
+                    <option value="matematica">Matemática</option>
+                    <option value="portugues">Português</option>
+                    <option value="ciencias">Ciências</option>
+                    <option value="historia">História</option>
+                    <option value="geografia">Geografia</option>
+                </select>
+
+                <label for="dados-adicionais">Dados Adicionais:</label>
+                <textarea id="dados-adicionais" placeholder="Escreva algo sobre você..."></textarea>
+            </div>
+
+            <div class="avatar-section">
+                <img src="avatar-professor.png" alt="Avatar do Professor" class="avatar">
+                <button type="button" class="edit-avatar">Editar Avatar</button>
+            </div>
+
+            <button type="submit" class="submit-btn">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>
